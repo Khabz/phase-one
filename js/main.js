@@ -6,41 +6,50 @@ const selected_color = document.getElementById("selected-color");
 const selected_color_modal = document.getElementById("selected-color-modal");
 const detail_colors = document.querySelectorAll("#details-colors");
 const agreeButton = document.getElementById("agreeButton");
-const checkOutButton = (document.getElementById("add-to-cart").innerText =
-    "Add to Cart");
+const checkOutButton = document.getElementById("add-to-cart");
 
 let selectedColorId;
 let colorName;
+let discountAmount;
 
 // Select and change color
 function selectColor(id) {
     switch (id) {
         case "electric_red":
             colorName = "Electric Red";
+            discountAmount = "$16.95";
             break;
         case "purple":
             colorName = "Purple";
+            discountAmount = "$12.73"
             break;
         case "black":
             colorName = "Purple";
+            discountAmount = "$14.83"
             break;
         case "orange":
             colorName = "Orange";
+            discountAmount = "$15.95"
             break;
         case "yellow":
             colorName = "Yellow";
+            discountAmount = "$12.73"
             break;
         case "blue":
             colorName = "Blue";
+            discountAmount = "$11.73"
             break;
         case "dark_green":
             colorName = "Dark Blue";
-        default:
-            colorName = "";
+            discountAmount = "$10.73";
+            // default:
+            //     colorName = "";
+            //     discountAmount = "$14.99"
     }
     selectedColorId = id;
     add_to_cart.disabled = false;
     selected_color.innerHTML = colorName;
+    document.getElementById("discount-price").innerHTML = discountAmount
 }
 
 let count = 0;

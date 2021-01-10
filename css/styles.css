@@ -77,12 +77,6 @@ body {
     font-weight: bold;
 }
 
-.colors {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
 .color-name {
     display: flex;
 }
@@ -167,7 +161,7 @@ body {
 }
 
 #details-colors {
-    margin-left: 0px;
+    display: flex;
 }
 
 
@@ -189,7 +183,6 @@ body {
     width: 35px;
     border-radius: 18px;
     border: none;
-    margin-left: 15px;
 }
 
 #black {
@@ -198,7 +191,6 @@ body {
     width: 35px;
     border-radius: 18px;
     border: none;
-    margin-left: 15px;
 }
 
 #orange {
@@ -207,7 +199,6 @@ body {
     width: 35px;
     border-radius: 18px;
     border: none;
-    margin-left: 15px;
 }
 
 #yellow {
@@ -216,7 +207,6 @@ body {
     width: 35px;
     border-radius: 18px;
     border: none;
-    margin-left: 15px;
 }
 
 #blue {
@@ -225,7 +215,6 @@ body {
     width: 35px;
     border-radius: 18px;
     border: none;
-    margin-left: 15px;
 }
 
 #dark_green {
@@ -234,5 +223,4 @@ body {
     width: 35px;
     border-radius: 18px;
     border: none;
-    margin-left: 15px;
 }

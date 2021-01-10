@@ -28,7 +28,7 @@
                 <span>1,293 reviews</span>
             </div>
             <div class="prices mb-3">
-                <span class="current-price">$14.99</span>
+                <span id="discount-price" class="current-price">$14.99</span>
                 <span class="was-price">$17.99</span>
                 <span class="percentage">25%OFF</span>
             </div>
@@ -39,13 +39,13 @@
                     <span id="selected-color"></span>
                 </div>
                 <div class="colors mb-4">
-                    <button id="electric_red" onclick="selectColor(this.id)" value="Electric Red"></button>
-                    <button id="purple" onclick="selectColor(this.id)" value="Purple"></button>
-                    <button id="black" onclick="selectColor(this.id)" value="Black"></button>
-                    <button id="orange" onclick="selectColor(this.id)" value="Orange"></button>
-                    <button id="yellow" onclick="selectColor(this.id)" value="Yellow"></button>
-                    <button id="blue" onclick="selectColor(this.id)" value="Blue"></button>
-                    <button id="dark_green" onclick="selectColor(this.id)" value="Green"></button>
+                    <button class="btn" id="electric_red" onclick="selectColor(this.id)" value="Electric Red"></button>
+                    <button class="btn" id="purple" onclick="selectColor(this.id)" value="Purple"></button>
+                    <button class="btn" id="black" onclick="selectColor(this.id)" value="Black"></button>
+                    <button class="btn" id="orange" onclick="selectColor(this.id)" value="Orange"></button>
+                    <button class="btn" id="yellow" onclick="selectColor(this.id)" value="Yellow"></button>
+                    <button class="btn" id="blue" onclick="selectColor(this.id)" value="Blue"></button>
+                    <button class="btn" id="dark_green" onclick="selectColor(this.id)" value="Green"></button>
                 </div>
                 <h6 class="mb-3">Size Guide</h6>
                 <h6>Your Custom Fit</h6>
@@ -55,13 +55,13 @@
                     <span id="quantity-counter">0</span>
                 </button>
                 <button id="add-to-cart" class="btn btn-lg d-grid gap-2 col-6" data-bs-toggle="modal" data-bs-target="#cart-modal" disabled>
+                    Add to Cart
                 </button>
             </div>
             <hr />
             <div class="details mt-3 mb-3">
                 <h5 class="mb-3">DETAILS</h5>
-                <div id="details-colors">
-                </div>
+                <div id="details-colors"></div>
             </div>
             <hr />
             <div class="details mt-3 mb-3">
