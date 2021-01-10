@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url('/img/background.png');
+    background-color: rgb(15, 42, 72);
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
     display: flex;
