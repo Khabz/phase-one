@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(15, 42, 72);
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.container {
+    min-width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: 0%;
+    padding: 20px 20px 20px 20px
+}
+
+.card h1 {
+    font-weight: bold;
+}
+
+.reviews {
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.reviews span {
+    color: lightgrey;
+    margin-left: 30px;
+}
+
+.prices {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-width: auto;
+    width: 270px;
+    justify-content: space-between;
+}
+
+.current-price {
+    font-size: 22px;
+    font-weight: bolder;
+    color: rgb(209, 85, 103);
+}
+
+.was-price {
+    font-size: 14px;
+    color: gray;
+}
+
+.percentage {
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+}
+
+.description {
+    margin-left: 10px;
+}
+
+.color-container h6 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.color-name {
+    display: flex;
+}
+
+.color-name p {
+    font-weight: bold;
+}
+
+.color-name #selected-color {
+    margin-left: 5px;
+}
+
+.checkout-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.checkout-container #quantity {
+    border: 1px black solid;
+    border-radius: 55px;
+    height: 55px;
+}
+
+#quantity span {
+    font-weight: bold;
+    padding: 50px;
+    text-align: center;
+}
+
+.checkout-container button {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    margin-left: 30px;
+    font-size: 16px;
+    height: 55px;
+}
+
+.details h5 {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/*
+    colors styling
+*/
+
+#electric_red {
+    background-color: red;
+    height: 35px;
+    width: 35px;
+    border-radius: 18px;
+    border: none;
+}
+
+#purple {
+    background-color: purple;
+    height: 35px;
+    width: 35px;
+    border-radius: 18px;
+    border: none;
+    margin-left: 15px;
+}
+
+#black {
+    background-color: black;
+    height: 35px;
+    width: 35px;
+    border-radius: 18px;
+    border: none;
+    margin-left: 15px;
+}
+
+#orange {
+    background-color: orange;
+    height: 35px;
+    width: 35px;
+    border-radius: 18px;
+    border: none;
+    margin-left: 15px;
+}
+
+#yellow {
+    background-color: yellow;
+    height: 35px;
+    width: 35px;
+    border-radius: 18px;
+    border: none;
+    margin-left: 15px;
+}
+
+#blue {
+    background-color: darkblue;
+    height: 35px;
+    width: 35px;
+    border-radius: 18px;
+    border: none;
+    margin-left: 15px;
+}
+
+#dark_green {
+    background-color: darkgreen;
+    height: 35px;
+    width: 35px;
+    border-radius: 18px;
+    border: none;
+    margin-left: 15px;
+}
