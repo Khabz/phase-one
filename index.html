@@ -36,29 +36,32 @@
             <div class="color-container mt-3 mb-3">
                 <div class="color-name">
                     <p>Color: </p>
-                    <span id="selected-color">Electric Red</span>
+                    <span id="selected-color"></span>
                 </div>
                 <div class="colors mb-4">
-                    <button id="electric_red"></button>
-                    <button id="purple"></button>
-                    <button id="black"></button>
-                    <button id="orange"></button>
-                    <button id="yellow"></button>
-                    <button id="blue"></button>
-                    <button id="dark_green"></button>
+                    <button id="electric_red" onclick="selectColor(this.id)" value="Electric Red"></button>
+                    <button id="purple" onclick="selectColor(this.id)" value="Purple"></button>
+                    <button id="black" onclick="selectColor(this.id)" value="Black"></button>
+                    <button id="orange" onclick="selectColor(this.id)" value="Orange"></button>
+                    <button id="yellow" onclick="selectColor(this.id)" value="Yellow"></button>
+                    <button id="blue" onclick="selectColor(this.id)" value="Blue"></button>
+                    <button id="dark_green" onclick="selectColor(this.id)" value="Green"></button>
                 </div>
                 <h6 class="mb-3">Size Guide</h6>
                 <h6>Your Custom Fit</h6>
             </div>
             <div class="checkout-container mb-5">
-                <div id="quantity">
-                    <span>3</span>
-                </div>
-                <button class="btn btn-lg d-grid gap-2 col-6">Checkout Now</button>
+                <button id="quantity" disabled>
+                    <span id="quantity-counter">0</span>
+                </button>
+                <button id="add-to-cart" class="btn btn-lg d-grid gap-2 col-6" data-bs-toggle="modal" data-bs-target="#cart-modal" disabled>
+                </button>
             </div>
             <hr />
             <div class="details mt-3 mb-3">
-                <h5>DETAILS</h5>
+                <h5 class="mb-3">DETAILS</h5>
+                <div id="details-colors">
+                </div>
             </div>
             <hr />
             <div class="details mt-3 mb-3">
@@ -66,9 +69,38 @@
                 <h5>Shipping & Returns</h5>
             </div>
         </div>
+
+        <!--Cart modal-->
+        <div class="modal fade" id="cart-modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p class="text-center">Please add the quantity of the item you have selected</p>
+                        <div class="quantity-options mt-5">
+                            <span id="selected-color-modal"></span>
+                            <div class="quatity-buttons">
+                                <button class="btn btn-lg" onclick="decrement()">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                                <span id="modal-counter">0</span>
+                                <button class="btn btn-lg" onclick="increment()">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="agreeButton" type="button" class="btn btn-success">Agree</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Bootstrap including popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
